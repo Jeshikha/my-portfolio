@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@500;800&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
 
 
@@ -104,7 +102,7 @@ main {
 
 .hero-banner {
   background-color: rgba(90, 148, 157, 0.6);
-  background-image: url("../images/mauritius.jpg");
+  background-image: url("../images/mauritius2.jpg");
   background-size: cover;
   background-position: center;
   min-height: 600px;
@@ -121,8 +119,8 @@ main {
 
 
 .hero-banner h2 {
-  background-color: white;
-  color: black;
+
+  color: white;
   margin-right: 0;
   padding: 10px 5px;
   font-size: 45px;
@@ -136,8 +134,8 @@ main {
 }
 
 .hero-banner h2:hover {
-  color: #ABEBD2;
-  background-color: black;
+  color: black;
+  background-color: white;
   transition: all 0.25s ease-in;
 }
 
@@ -202,23 +200,23 @@ html {
 
 #art {
   grid-area: art;
-  background-image: url("../images/art.jpg");
+  background-image: url("../images/art2.jpg");
 
 }
 
 #websites {
   grid-area: websites;
-  background-image: url("../images/wireframe.jpg");
+  background-image: url("../images/wireframe2.jpg");
 }
 
 #solution {
   grid-area: solution;
-  background-image: url("../images/laptop.jpg");
+  background-image: url("../images/laptop2.jpg");
 }
 
 #animal {
   grid-area: animal;
-  background-image: url("../images/racoon.jpg"); 
+  background-image: url("../images/boxer.jpg");
 }
 
 .grid-container {
@@ -237,7 +235,7 @@ html {
 
   text-decoration: none;
   background-color: #ABEBD2;
-  padding: 10px 10px;
+  padding: 0;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -245,15 +243,17 @@ html {
 }
 
 .grid-container span {
-  background-color: white;
+  background-color: #ABEBD2;
   font-size: 25px;
   color: black;
+  padding: 10px;
 }
 
 .grid-container h1 {
   color: black;
   font-size: 30px;
   background-color: white;
+  padding: 10px;
 }
 
 #art span:hover,
@@ -369,52 +369,53 @@ footer p {
   footer {
     font-size: 14px;
   }
+}
 
-  @media screen and (max-width: 768px) {
-    header {
-      justify-content: center;
-      text-align: center;
-    }
-
-    .hero-banner {
-      justify-content: center;
-      text-align: center;
-    }
-
-    .contact address {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .grid-container {
-      grid-template-areas: "art" "websites" "solution" "animal";
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      min-height: 1800px;
-    }
-
-    #animal,
-    #art,
-    #solution,
-    #websites {
-      grid-column: 1;
-      grid-row: auto;
-    }
-
-    .page-section>h2,
-    .page-section>div {
-      flex: 0 0 100%;
-    }
-
-    .page-section>h2 {
-      border-right: none;
-      border-bottom: 4px solid beige;
-      margin-bottom: 20px;
-      text-align: left;
-      font-size: 7vw;
-    }
-
-    footer {
-      font-size: 12px;
-    }
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: center;
+    text-align: center;
   }
+
+  .hero-banner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .grid-container {
+    grid-template-areas: "art" "websites" "solution" "animal";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    min-height: 1800px;
+  }
+
+  #animal,
+  #art,
+  #solution,
+  #websites {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .page-section>h2,
+  .page-section>div {
+    flex: 0 0 100%;
+  }
+
+  .page-section>h2 {
+    border-right: none;
+    border-bottom: 4px solid beige;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 7vw;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
