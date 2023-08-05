@@ -148,27 +148,146 @@ main {
 }
 
 .page-section {
-  margin: 50px 20px;
+  margin: 50px 30px;
   padding: 5px 50px;
 }
 
-.flex-container {
+.page-section#work {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+
 }
 
-.flex-item {
-  border: 5px rgb(35, 77, 81);
+#art {
+  grid-area: art;
+  background-image: url("../images/art.jpg");
+
+}
+
+#websites {
+  grid-area: websites;
+  background-image: url("../images/wireframe.jpg");
+}
+
+#solution {
+  grid-area: solution;
+  background-image: url("../images/laptop.jpg");
+}
+
+#animal {
+  grid-area: animal;
+  background-image: url("../images/racoon.jpg");
+}
+
+.grid-container {
+  display: grid;
+  min-height: 900px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "art websites" "solution animal";
+  grid-gap: 20px;
+}
+
+#animal,
+#art,
+#solution,
+#websites {
+  font-size: 20px;
+  color: rgb(34, 206, 212);
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 10px;
+
+}
+
+
+#art:hover,
+#websites:hover,
+#solution:hover,
+#animal:hover {
   background-color: black;
-  color: rgb(35, 77, 81);
-  min-height: 150px;
-  max-height: 150px;
-  flex-basis: calc(50% - 1em);
+  color: rgb(17, 20, 20);
+}
+
+.grid-container h1 {
+  background-color: rgb(27, 30, 29);
+  font-size: 30px;
+  color: rgb(221, 231, 231);
+}
+
+.grid-container span {
+  background-color: rgb(27, 30, 29);
+  font-size: 20px;
+  color: rgb(221, 231, 231);
+}
+
+.contact address {
   display: flex;
-  align-items: flex-end;
-  padding: 0 0 20px 0;
-  margin: 0.5em;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgb(150, 238, 238);
+  line-height: 3;
+}
+
+.contact address a {
+  color: rgb(37, 89, 114);
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  padding: 15px;
+  background-repeat: no-repeat;
+}
+
+.contact address a:hover {
+  color: rgb(43, 193, 65);
+  transition: all 0.25s ease-in;
+}
 
 
+@media and (max-width:1000px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+  }
+
+  header nav {
+    justify-content: center;
+  }
+
+  .page-section>h2,
+  .page-section>div {
+    flex: 0 0 100%;
+  }
+
+  .page-section>h2 {
+    border-right: none;
+    border-bottom: 4px solid beige;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 7vw;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .flex-item {
+    flex-basis: 100%;
+  }
+
+  .hero-banner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
