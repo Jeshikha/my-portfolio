@@ -79,6 +79,15 @@ nav a:last-child {
   margin-right: 0;
 }
 
+.nav-icon {
+  width: 30px;
+  height: 30px;
+  top: 3px;
+  position: relative;
+  margin-left: 100px;
+
+}
+
 main {
   margin-top: 20px;
   margin-bottom: 45px;
