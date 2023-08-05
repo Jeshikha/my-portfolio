@@ -244,6 +244,12 @@ main {
   display: inline-block;
   padding: 15px;
   background-repeat: no-repeat;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+.contact address img {
+  vertical-align: middle;
 }
 
 .contact address a:hover {
@@ -270,6 +276,66 @@ main {
     justify-content: center;
   }
 
+  .page-section>h1,
+  .page-section>div {
+    flex: 0 0 100%;
+  }
+
+  .page-section>h1 {
+    border-right: none;
+    border-bottom: 4px solid beige;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 7vw;
+  }
+
+  .grid-container {
+    grid-template-areas: "art websites" "solution animal";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    min-height: 900px;
+  }
+
+  #animal,
+  #art,
+  #solution,
+  #websites {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-banner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .grid-container {
+    grid-template-areas: "art" "websites" "solution" "animal";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    min-height: 1800px;
+  }
+
+  #animal,
+  #art,
+  #solution,
+  #websites {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
   .page-section>h2,
   .page-section>div {
     flex: 0 0 100%;
@@ -281,21 +347,5 @@ main {
     margin-bottom: 20px;
     text-align: left;
     font-size: 7vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .flex-item {
-    flex-basis: 100%;
-  }
-
-  .hero-banner {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .contact address {
-    flex-direction: column;
-    align-items: flex-start;
   }
 }
