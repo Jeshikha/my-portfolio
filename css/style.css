@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@500;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -19,7 +24,8 @@ h6 {
 }
 
 p {
-  margin: 0;
+  margin: 0 0 20px;
+  font-family: 'Shippori Mincho', serif;
 }
 
 header {
@@ -30,7 +36,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   background-color: rgb(49, 37, 47);
-  box-shadow: 0 10px 70px rgb(39, 54, 54)
+  box-shadow: 0 10px 70px rgb(39, 54, 54);
 }
 
 header h1 {
@@ -40,17 +46,19 @@ header h1 {
   margin: 0;
   font-size: 4vw;
   line-height: 1;
+  font-family: 'Handjet', cursive;
 }
 
 nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-right: 5px;
 }
 
 nav a {
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 5px 30px;
   color: rgb(63, 176, 187);
   background-image: linear-gradient (180deg rgb(183, 167, 183));
   background-repeat: no-repeat;
@@ -58,6 +66,7 @@ nav a {
   background-position: bottom;
   transition: all 0.25s ease-in;
   font-size: 1.3rem;
+
 }
 
 nav a:hover {
@@ -101,6 +110,7 @@ main {
   font-size: 45px;
   line-height: 1.2;
   display: inline;
+  font-family: 'Big Shoulders Inline Text', cursive;
 }
 
 .profile-aside {
@@ -194,8 +204,11 @@ main {
 #websites {
 
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(50, 152, 164);
   padding: 10px 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 
 }
 
