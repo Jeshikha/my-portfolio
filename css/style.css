@@ -57,7 +57,7 @@ nav a {
   background-size: 100% 0.2em;
   background-position: bottom;
   transition: all 0.25s ease-in;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 nav a:hover {
@@ -68,4 +68,107 @@ nav a:hover {
 
 nav a:last-child {
   margin-right: 0;
+}
+
+main {
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+.hero-banner {
+  background-color: rgb(90, 148, 157);
+  background-image: url("../images/mauritius.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  padding: 20% 15%;
+  background-blend-mode: soft-light;
+  display: flex;
+  text-align: center;
+
+}
+
+.hero-banner div {
+  flex: 0 0 100%;
+}
+
+
+.hero-banner h2 {
+  background-color: rgb(37, 53, 54);
+  color: rgb(181, 217, 226);
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 45px;
+  line-height: 1.2;
+  display: inline;
+}
+
+.profile-aside {
+  background-color: #333;
+  color: white;
+  text-align: left;
+  padding: 30px;
+  flex: 0.5;
+}
+
+.profile-picture {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.profile-picture img {
+  width: 300px;
+  height: 400px;
+
+}
+
+/* About me section */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-text {
+  flex: 2;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 50px;
+  padding-top: 40px;
+}
+
+.page-wrapper h2 {
+  padding-left: 50px;
+  background-color: rgb(40, 146, 163);
+  color: white;
+  line-height: 3;
+  font-size: 40px;
+  display: flex;
+}
+
+.page-section {
+  margin: 50px 20px;
+  padding: 5px 50px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  border: 5px rgb(35, 77, 81);
+  background-color: black;
+  color: rgb(35, 77, 81);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+
+
 }
