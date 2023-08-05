@@ -244,7 +244,7 @@ main {
   display: inline-block;
   padding: 15px;
   background-repeat: no-repeat;
-  padding-left: 10px;
+  padding-left: 20px;
   vertical-align: middle;
 }
 
@@ -255,6 +255,17 @@ main {
 .contact address a:hover {
   color: rgb(43, 193, 65);
   transition: all 0.25s ease-in;
+}
+
+footer {
+  background-color: #145b73;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
 }
 
 
@@ -303,49 +314,56 @@ main {
     grid-column: auto;
     grid-row: auto;
   }
-}
 
-@media screen and (max-width: 768px) {
-  header {
-    justify-content: center;
-    text-align: center;
+  footer {
+    font-size: 14px;
   }
 
-  .hero-banner {
-    justify-content: center;
-    text-align: center;
-  }
+  @media screen and (max-width: 768px) {
+    header {
+      justify-content: center;
+      text-align: center;
+    }
 
-  .contact address {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    .hero-banner {
+      justify-content: center;
+      text-align: center;
+    }
 
-  .grid-container {
-    grid-template-areas: "art" "websites" "solution" "animal";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    min-height: 1800px;
-  }
+    .contact address {
+      flex-direction: column;
+      align-items: flex-start;
+    }
 
-  #animal,
-  #art,
-  #solution,
-  #websites {
-    grid-column: 1;
-    grid-row: auto;
-  }
+    .grid-container {
+      grid-template-areas: "art" "websites" "solution" "animal";
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      min-height: 1800px;
+    }
 
-  .page-section>h2,
-  .page-section>div {
-    flex: 0 0 100%;
-  }
+    #animal,
+    #art,
+    #solution,
+    #websites {
+      grid-column: 1;
+      grid-row: auto;
+    }
 
-  .page-section>h2 {
-    border-right: none;
-    border-bottom: 4px solid beige;
-    margin-bottom: 20px;
-    text-align: left;
-    font-size: 7vw;
+    .page-section>h2,
+    .page-section>div {
+      flex: 0 0 100%;
+    }
+
+    .page-section>h2 {
+      border-right: none;
+      border-bottom: 4px solid beige;
+      margin-bottom: 20px;
+      text-align: left;
+      font-size: 7vw;
+    }
+
+    footer {
+      font-size: 12px;
+    }
   }
-}
