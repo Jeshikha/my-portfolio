@@ -484,6 +484,13 @@ footer p {
     font-size: 1.2rem;
   }
 
+  .nav-icon {
+    width: 30px;
+    height: 30px;
+    top: 3px;
+    position: relative;
+  }
+
   .hero-banner h2 {
     font-size: 30px;
   }
