@@ -92,9 +92,12 @@ The following images shows the web application's appearance and functionality:
 ## Useful Links to facilitate viewing of project
 
 1. The URL of the GitHub repository:
+
 https://github.com/Jeshikha/my-portfolio
 
 2. The URL of the functional, deployed application on GitHub Pages:
+
+https://jeshikha.github.io/my-portfolio/
 
 
 
