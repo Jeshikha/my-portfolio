@@ -123,11 +123,16 @@ main {
   display: flex;
   text-align: center;
 
+
 }
 
 /* Hero banner content styles */
 .hero-banner div {
   flex: 0 0 100%;
+}
+
+.hero-banner a {
+  text-decoration: none;
 }
 
 /* Hero banner h2 styles */
@@ -143,6 +148,7 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
 
 }
 
