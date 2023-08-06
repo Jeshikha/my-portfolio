@@ -1,4 +1,4 @@
-#<My-Portfolio-Page>
+# My Portfolio Page
 
 ## Reason of this Project
 
@@ -87,7 +87,7 @@ The following images shows the web application's appearance and functionality:
 
 ![Porfolio webpage includes grid area and Lets Get in Touch](images/screenshot4.png)
 
-![Porfolio webpage includes grid area end, lets get in touch and footer](images/screenshot3.png)
+![Porfolio webpage includes grid area end, lets get in touch and footer](images/screenshot5.png)
 
 ## Useful Links to facilitate viewing of project
 
