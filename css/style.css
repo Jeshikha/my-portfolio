@@ -1,11 +1,13 @@
+/* Importing fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
 
-
+/* Universal styles */
 * {
   box-sizing: border-box;
 }
 
+/* Body styles */
 body {
   margin: 0;
   padding: 0;
@@ -13,6 +15,7 @@ body {
   line-height: 1.5;
 }
 
+/* Header styles */
 h1,
 h2,
 h3,
@@ -22,11 +25,14 @@ h6 {
   margin: 0;
 }
 
+/*Paragraph styles */
+
 p {
   margin: 0 0 20px;
   font-family: 'Shippori Mincho', serif;
 }
 
+/* Header styles */
 header {
   padding: 30px 12% 30px 0;
   display: flex;
@@ -56,6 +62,7 @@ header h1:hover {
 
 }
 
+/* Navigation link styles */
 nav {
   display: flex;
   flex-direction: row;
@@ -63,6 +70,7 @@ nav {
   margin-right: 5px;
 }
 
+/* Navigation link styles */
 nav a {
   text-decoration: none;
   padding: 5px 30px;
@@ -82,10 +90,12 @@ nav a:hover {
   font-display: black;
 }
 
+/* Last navigation link styles */
 nav a:last-child {
   margin-right: 0;
 }
 
+/* Navigation icon styles */
 .nav-icon {
   width: 30px;
   height: 30px;
@@ -95,11 +105,13 @@ nav a:last-child {
 
 }
 
+/* Main content styles */
 main {
   margin-top: 20px;
   margin-bottom: 45px;
 }
 
+/* Hero banner styles */
 .hero-banner {
   background-color: rgba(90, 148, 157, 0.6);
   background-image: url("../images/mauritius2.jpg");
@@ -113,11 +125,12 @@ main {
 
 }
 
+/* Hero banner content styles */
 .hero-banner div {
   flex: 0 0 100%;
 }
 
-
+/* Hero banner h2 styles */
 .hero-banner h2 {
 
   color: white;
@@ -133,12 +146,14 @@ main {
 
 }
 
+/* Hero banner h2 hover styles */
 .hero-banner h2:hover {
   color: black;
   background-color: white;
   transition: all 0.25s ease-in;
 }
 
+/* Profile aside styles */
 .profile-aside {
   background-color: #ABEBD2;
   color: white;
@@ -174,10 +189,12 @@ main {
   padding-top: 40px;
 }
 
+/* Smooth scrolling for links */
 html {
   scroll-behavior: smooth;
 }
 
+/* Page section h2 styles */
 .page-wrapper h2 {
   padding-left: 70px;
   background-color: #ABEBD2;
@@ -192,12 +209,14 @@ html {
   padding: 5px 50px;
 }
 
+/* Work section styles */
 .page-section#work {
   display: flex;
   flex-direction: column;
 
 }
 
+/* Grid container images */
 #art {
   grid-area: art;
   background-image: url("../images/art2.jpg");
@@ -219,6 +238,7 @@ html {
   background-image: url("../images/boxer.jpg");
 }
 
+/* Grid container styles */
 .grid-container {
   display: grid;
   min-height: 900px;
@@ -228,6 +248,7 @@ html {
   grid-gap: 20px;
 }
 
+/* Grid item styles */
 #animal,
 #art,
 #solution,
@@ -256,6 +277,7 @@ html {
   padding: 10px;
 }
 
+/* Grid item hover styles */
 #art span:hover,
 #websites span:hover,
 #solution span:hover,
@@ -274,6 +296,7 @@ html {
   transition: all 0.25s ease-in;
 }
 
+/* Contact section styles */
 .contact address {
   display: flex;
   flex-wrap: wrap;
@@ -298,16 +321,19 @@ html {
   vertical-align: middle;
 }
 
+/* Contact images alignment */
 .contact address img {
   vertical-align: middle;
 }
 
+/* contact hover styles */
 .contact address a:hover {
   color: rgb(21, 57, 78);
   background-color: white;
   transition: all 0.25s ease-in;
 }
 
+/* Footer styles */
 footer {
   background-color: #ABEBD2;
   color: #010101;
@@ -319,6 +345,7 @@ footer p {
   margin: 0;
 }
 
+/* Media query for tablets and smaller screens */
 
 @media screen and (max-width: 1000px) {
   header {
@@ -371,6 +398,8 @@ footer p {
   }
 }
 
+/* Media query for tablets and smaller screens */
+
 @media screen and (max-width: 768px) {
   header {
     justify-content: center;
@@ -380,6 +409,10 @@ footer p {
   .hero-banner {
     justify-content: center;
     text-align: center;
+  }
+
+  header h1 {
+    font-size: :8vw;
   }
 
   .contact address {
@@ -392,6 +425,15 @@ footer p {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     min-height: 1800px;
+  }
+
+  nav a {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+  }
+
+  .hero-banner h2 {
+    font-size: 30px;
   }
 
   #animal,
